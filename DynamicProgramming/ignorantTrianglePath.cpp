@@ -9,6 +9,8 @@ queue를 사용했음
 #include <algorithm>
 using namespace std;
 
+
+
 int N; //개수
 
 int cache[101][101]; //-1로 초기화.
@@ -32,12 +34,13 @@ int maxVal()
 
 int find()
 {
+	
 	q.push(pair<int,int>(0,0));
 	cache[0][0] = value[0][0];
 
 	while(q.front().first != N-1)
 	{	
-		
+
 		pair<int,int> idx = q.front();
 		q.pop();	
 		int y = idx.first;
@@ -81,10 +84,9 @@ int main()
 			}
 		}
 		
-		
+
 		cout<<find()<<endl;
 		
-	
 		
 		
 	}
