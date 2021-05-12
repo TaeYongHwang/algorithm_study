@@ -19,7 +19,7 @@ int main() {
         accumulated.push_back(tmp);
     }
 
-    for(int i = 1 ; i < N ; i++) {
+    for(int i = 1 ; i <= N ; i++) {
         accumulated[i] += accumulated[i-1];
     }
 
